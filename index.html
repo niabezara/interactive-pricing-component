@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./general.css" />
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Interactive pricing component</title>
+  </head>
+  <body>
+    <header>
+      <div class="head-div">
+        <h1 class="title">Simple, traffic-based pricing</h1>
+        <p class="info">
+          Sign-up for our 30-day trial. No credit card required.
+        </p>
+      </div>
+    </header>
+    <div class="container">
+      <article>
+        <h1 class="pageviews"><span class="views">100K</span> PAGEVIEWS</h1>
+        <!-- progress bar -->
+        <p class="amount1">
+          <span id="number2" class="number2">320</span><span class="zero"></span
+          ><span class="month2"> /month</span>
+        </p>
+      </article>
+
+      <div class="slide-container">
+        <input
+          id="slider"
+          class="slider"
+          type="range"
+          min="00"
+          max="320.00"
+          value="170.00"
+          step="5.00"
+        />
+      </div>
+      <p class="amount2">
+        <span id="number1" class="number1">16</span><span class="zero"></span
+        ><span class="month"> /month</span>
+      </p>
+      <!-- switched between month and year  -->
+      <section class="button-section">
+        <p>Monthly Billing</p>
+        <div class="check">
+          <input id="check" type="checkbox" />
+          <label for="check"></label>
+        </div>
+        <p>Yearly Billing</p>
+        <button class="percent">-25% <span class="disc">discount</span></button>
+      </section>
+      <hr />
+      <!-- feautures  -->
+      <footer>
+        <div class="last-section">
+          <p>Unlimited websites</p>
+          <p>100% data ownership</p>
+          <p>Email reports</p>
+        </div>
+        <button class="trial">Start my trial</button>
+      </footer>
+    </div>
+    <script defer src="./index.js"></script>
+  </body>
+</html>
